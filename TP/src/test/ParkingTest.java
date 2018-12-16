@@ -1,9 +1,9 @@
 package test;
 
+import main.Voiture;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import main.Voiture;
 import main.Parking;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -33,19 +33,18 @@ import static org.junit.Assert.*;
  * qui réalise les engagements, et suivi d'un appel à tearDown(), qui les
  * détruit.
  */
-public class VoitureTest
+public class ParkingTest
 {
     // Définissez ici les variables d'instance nécessaires à vos engagements;
     // Vous pouvez également les saisir automatiquement du présentoir
     // à l'aide du menu contextuel "Présentoir --> Engagements".
     // Notez cependant que ce dernier ne peut saisir les objets primitifs
     // du présentoir (les objets sans constructeur, comme int, float, etc.).
-     private Parking parking1;
-
+    private Voiture voiture1;
     /**
      * Constructeur de la classe-test VoitureTest
      */
-    public VoitureTest()
+    public ParkingTest()
     {
     }
 
@@ -58,7 +57,7 @@ public class VoitureTest
     public void setUp() // throws java.lang.Exception
     {
         // Initialisez ici vos engagements
-        parking1 = new Parking();
+        Parking parking1 = new Parking();
         parking1.passerALaPompe();
     }
 
@@ -74,29 +73,18 @@ public class VoitureTest
     }
 
     @Test
-    public void faireLePleinTest()
-    {
-        Voiture voiture1 = new Voiture();
-        voiture1.faireLePlein();
-        assertEquals(40, voiture1.getNiveauEssence());
-    }
-    
-    @Test
     public void fixtureTest()
     {
-         parking1 = new Parking();
+        Parking parking1 = new Parking();
         parking1.passerALaPompe();
         assertEquals(40, parking1.passerALaPompe());
     }
 
     @Test
-    public void voitureConstructorTest(){
-        Voiture voiture1 = new Voiture();
-        voiture1 = new Voiture();
-        assertThat("Diesel", is("Diesel"));
-        assertThat(40, is(40));
+    public void parkingConstructorTest(){
+        Parking parking1 = new Parking();
+        parking1 = new Parking();
+        assertThat(voiture1, is(voiture1));
     }
-
-
 }
 
