@@ -71,7 +71,6 @@ public class Voiture
             var = "allez vite faire le plein";
         else
             var = "vous pouvez encore rouler";
-        System.out.println("Votre voiture possede encore " + this.niveauEssence + " de carburant de type " + this.typeEssence + ", " + var);
     }
 
 }
