@@ -1,10 +1,14 @@
 package test;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import main.Voiture;
 import main.Parking;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
@@ -33,25 +37,23 @@ import static org.junit.Assert.*;
  * qui réalise les engagements, et suivi d'un appel à tearDown(), qui les
  * détruit.
  */
-public class VoitureTest
-{
+public class VoitureTest {
     // Définissez ici les variables d'instance nécessaires à vos engagements;
     // Vous pouvez également les saisir automatiquement du présentoir
     // à l'aide du menu contextuel "Présentoir --> Engagements".
     // Notez cependant que ce dernier ne peut saisir les objets primitifs
     // du présentoir (les objets sans constructeur, comme int, float, etc.).
-     private Parking parking1;
+    private Parking parking1;
 
     /**
      * Constructeur de la classe-test VoitureTest
      */
-    public VoitureTest()
-    {
+    public VoitureTest() {
     }
 
     /**
      * Met en place les engagements.
-     *
+     * <p>
      * Méthode appelée avant chaque appel de méthode de test.
      */
     @Before
@@ -64,7 +66,7 @@ public class VoitureTest
 
     /**
      * Supprime les engagements
-     *
+     * <p>
      * Méthode appelée après chaque appel de méthode de test.
      */
     @After
@@ -74,29 +76,40 @@ public class VoitureTest
     }
 
     @Test
-    public void faireLePleinTest()
-    {
+    public void faireLePleinTest() {
         Voiture voiture1 = new Voiture();
         voiture1.faireLePlein();
         assertEquals(40, voiture1.getNiveauEssence());
     }
-    
+
     @Test
-    public void fixtureTest()
-    {
-         parking1 = new Parking();
+    public void fixtureTest() {
+        parking1 = new Parking();
         parking1.passerALaPompe();
         assertEquals(40, parking1.passerALaPompe());
     }
 
     @Test
-    public void voitureConstructorTest(){
+    public void voitureConstructorTest() {
         Voiture voiture1 = new Voiture();
         voiture1 = new Voiture();
         assertThat("Diesel", is("Diesel"));
         assertThat(40, is(40));
     }
 
+    @Test
+    public void getterSetterTypeEssenceTest() {
+        final String typeEssence = "Diesel";
+        final Voiture voiture = new Voiture();
+        voiture.setTypeEssence("Diesel");
+        Assert.assertEquals(voiture.getTypeEssence(), typeEssence);
+    }
 
+    @Test
+    public void getterSetterNiveauEssenceTest() {
+        final int niveauEssence = 40;
+        final Voiture voiture = new Voiture();
+        voiture.setNiveauEssence(40);
+        Assert.assertEquals(voiture.getNiveauEssence(), niveauEssence);
+    }
 }
-
