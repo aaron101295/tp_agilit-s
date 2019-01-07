@@ -49,9 +49,9 @@ public class Voiture
         // Insérez votre code ici
         return this.niveauEssence;
     }
-       public void setNiveauEssence(int jauge_essence)
+       public void setNiveauEssence(int jaugeEssence)
     {
-        this.niveauEssence = jauge_essence;
+        this.niveauEssence = jaugeEssence;
     }
  
     /**

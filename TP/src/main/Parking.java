@@ -29,7 +29,7 @@ public class Parking
        return this.voiture.getNiveauEssence();
     }
 
-    public boolean AjouteVoitureAuParking(Voiture v){
+    public boolean ajouteVoitureAuParking(Voiture v){
             list.add(v);
         return true;
     }
