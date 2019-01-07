@@ -38,6 +38,7 @@ public class Voiture
     this.typeEssence = typeEssence;
      }
 
+
     /**
      * get sur la variable typeEssence
      *
@@ -48,9 +49,9 @@ public class Voiture
         // Insérez votre code ici
         return this.niveauEssence;
     }
-       public void setJauge_essence(int jauge_essence)
+       public void setNiveauEssence(int jauge_essence)
     {
-        this.niveauEssence = niveauEssence;
+        this.niveauEssence = jauge_essence;
     }
  
     /**

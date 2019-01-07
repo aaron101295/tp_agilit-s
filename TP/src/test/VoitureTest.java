@@ -110,6 +110,6 @@ public class VoitureTest {
         final int niveauEssence = 40;
         final Voiture voiture = new Voiture();
         voiture.setNiveauEssence(40);
-        Assert.assertEquals(voiture.getNiveauEssence(), niveauEssence);
+        Assert.assertEquals(niveauEssence,voiture.getNiveauEssence());
     }
 }
