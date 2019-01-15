@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5993b553-972d-4c47-a716-0212f5c88a76" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/features/passerALaPompe2.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/VoitureInvocationStepDefinitionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/VoitureInvocationStepDefinitionTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="5993b553-972d-4c47-a716-0212f5c88a76" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -178,10 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
+    <option name="x" value="242" />
+    <option name="y" value="30" />
     <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="height" value="740" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -259,7 +254,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547541907590" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547542395334" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -293,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.VoitureInvocationStepDefinitionTest">
+  <component name="RunManager" selected="JUnit.ParkingTest">
     <configuration name="Feature: afficherUnConseil" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/features/afficherUnConseil.feature" />
@@ -447,8 +442,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VoitureInvocationStepDefinitionTest" />
         <item itemvalue="JUnit.ParkingTest" />
+        <item itemvalue="JUnit.VoitureInvocationStepDefinitionTest" />
         <item itemvalue="Cucumber java.Feature: ajouterVoitureParking" />
         <item itemvalue="Cucumber java.Feature: afficherUnConseil" />
         <item itemvalue="JUnit.features in agilité_test_auto" />
